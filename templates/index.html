@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="Content">
+        <h1 style="text-align: center">Amazon Review Scrapper</h1>
+        <div class="form">
+            <form action="/scrap" method="POST">
+                Enter the link of product
+                <input type="text" name="content" id="content"><br>
+                Enter number of pages of review you want to read(1<=page<=50, nothing to read max 50)
+                <input type="number" name="page" id="page"><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <br>
+        <h4>Note:</h4>
+        <p>This program can read max of 50 pages review</p>
+        <p><b>product linkt to try = </b>https://www.amazon.in/Test-Exclusive-550/dp/B077Q7GW9V/ref=sxts_sxwds-bia-wc-nc-drs1_0?crid=200TBU0XQ18LV&cv_ct_cx=redmi+9+pro&dchild=1&keywords=redmi+9+pro&pd_rd_i=B077Q7GW9V&pd_rd_r=e72be99d-ac82-4d90-a0ec-408d489f6c0d&pd_rd_w=AIp0t&pd_rd_wg=098ZR&pf_rd_p=fb4f277a-dd48-4b8a-8fea-f308911cfdb9&pf_rd_r=ZREJ3C0M9T18E4DDGKJV&psc=1&qid=1605432567&sprefix=redmi%2Caps%2C313&sr=1-1-0f636240-5ebc-47e0-a5f7-bb2a7fa20976</p>
+    </div>
+</body>
+</html>
